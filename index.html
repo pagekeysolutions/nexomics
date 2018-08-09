@@ -8,22 +8,38 @@
     <title>Nexomics Biosciences</title>
   </head>
   <body>
-    <div className="app">
-      <header className="app-header">
+    <div class="app">
+      <header class="app-header">
         <a href="/">
           <img class="app-logo" src="/img/logo.png" alt="logo" />
         </a>
-        <div className="hamburger" onClick={this.hamburgerClick}></div>
-        <nav className={"app-navbar" + (this.state.isShown ? ' app-navbar-shown' : '')}>
+        <div id="hamburger" class="hamburger" onclick="hamburgerClick();"></div>
+        <nav id='app-navbar' class="app-navbar">
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/protein">Recombinant Protein Production</Link></li>
-            <li><Link to="/nmr">NMR Services</Link></li>
-            <li><Link to="crystallography">X-Ray Crystallography</Link></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/protein">Recombinant Protein Production</a></li>
+            <li><a href="/nmr">NMR Services</a></li>
+            <li><a href="crystallography">X-Ray Crystallography</a></li>
           </ul>
         </nav>
       </header>
-      <Main />
+      <div class="main">
+        <div class="DisplayItemGroup">
+          <div class="DisplayItem">
+            <img src='/img/protein.jpg' alt='Protein' />
+            <div class="title">Protein</div>
+          </div>
+          <div class="DisplayItem">
+            <img src='/img/protein.jpg' alt='Protein' />
+            <div class="title">Protein</div>
+          </div>
+          <div class="DisplayItem">
+            <img src='/img/protein.jpg' alt='Protein' />
+            <div class="title">Protein</div>
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="/js/main.js"></script>
   </body>
 </html>
