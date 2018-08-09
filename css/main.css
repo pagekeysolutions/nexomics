@@ -1,0 +1,135 @@
+/**
+Primary green: #6CAA3F;
+Primary blue: #153099;
+
+Slate Gray: #738290;
+Vivid blue: #00A7E1;
+
+White: #fff;
+*/
+
+html,body {
+}
+
+.app {
+  font-size: 1rem;
+  overflow-x: hidden;
+}
+.app-header {
+  width: 100%;
+  text-align: left;
+  height: 8em;
+  box-shadow: 0 0 1em 0.1em black;
+}
+.app-logo {
+  float: left;
+  font-size: 2.5rem;
+  height: 2em;
+  padding: 0.5em;
+  padding-left: 1em;
+  display: inline-block;
+}
+.app-navbar-shown ul {
+  display: inherit !important;
+}
+.app-navbar ul {
+  margin: 3.6em 1em;
+  padding-left: 0;
+  list-style-type: none;
+  float: right;
+}
+.app-navbar ul li {
+  padding: 0.75rem;
+  border: 1px solid rgba(0,0,0,0.2);
+  background-color: #738290;
+  color: white;
+  display: inline;
+  margin-right: 1em;
+}
+.app-navbar ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px) {
+  .app-logo {
+    padding-left: 0.5em;
+  }
+  .app-navbar ul {
+    display: none;
+  }
+
+  .app-navbar ul {
+    margin: 0;
+    padding: 0;
+    padding-top: 6em;
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 15em;
+  }
+  .app-navbar ul li {
+    display: block;
+    float: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding: 1em 1em;
+  }
+}
+
+.hamburger {
+  float: right;
+  margin: 1em 0.25em;
+  width: 1.5em;
+  height: 1em;
+  display: inline-block;
+  text-align: right;
+  font-size: 2.5rem;
+  position: relative;
+  cursor: pointer;
+  z-index: 100;
+}
+.hamburger:before {
+  content: "";
+  position: absolute;
+  right: 0.25em;
+  top: 0.25em;
+  width: 1em;
+  height: 0.15em;
+  background: black;
+  box-shadow:
+    0 0.25em 0 0 black,
+    0 0.5em 0 0 black;
+    border-radius: .1em;
+  }
+
+.main {
+  padding: 3em;
+}
+/**** DisplayItem */
+.DisplayItemGroup {
+  display: flex;
+  flex-direction: column;
+}
+.DisplayItem {
+  margin: auto;
+  background-color: #00A7E1;
+  margin: 0.5em;
+  /* border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em; */
+}
+.DisplayItem img {
+}
+.DisplayItem img, .DisplayItem .title {
+  width: 10em;
+  margin: 0;
+}
+.DisplayItem .title {
+  margin: auto;
+  text-align: center;
+}
