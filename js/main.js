@@ -7,3 +7,7 @@ function hamburgerClick(e) {
     document.getElementById('app-navbar').classList.remove('app-navbar-shown');
   }
 }
+
+window.onload = function () {
+  document.getElementById("year").innerHTML = " " + new Date().getFullYear();
+};
