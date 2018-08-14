@@ -90,6 +90,10 @@ html,body {
     border-bottom: 1px solid rgba(0,0,0,0.2);
     padding: 1em 1em;
   }
+  .app-navbar ul li a {
+    background-color: white;
+    color: black;
+  }
 }
 
 .hamburger {
@@ -131,6 +135,13 @@ html,body {
   position: relative;
   font-weight: bold;
   text-align: center;
+}
+.main-subtitle {
+  text-align: center;
+}
+.main-subtitle a {
+  text-decoration: underline;
+  color: inherit;
 }
 
 /** Good things section **/
