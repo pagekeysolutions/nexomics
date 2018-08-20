@@ -37,6 +37,8 @@ html,body {
 }
 .app-navbar-shown ul {
   display: inherit !important;
+  width: 15em !important;
+  border-left: 1px solid rgba(0,0,0,0.5) !important;
 }
 .app-navbar ul {
   margin: 3.6em .9em;
@@ -67,21 +69,20 @@ html,body {
     padding-left: 0.5em;
   }
   .app-navbar ul {
-    display: none;
-  }
-
-  .app-navbar ul {
+    width: 0;
     margin: 0;
     padding: 0;
     padding-top: 6em;
-    background-color: #153099;
+    background-color: white;
     position: fixed;
     top: 0;
     right: 0;
     height: 100%;
-    width: 15em;
+    border-left: none;
+    transition: all 0.75s ease;
   }
   .app-navbar ul li {
+    text-align: center;
     display: block;
     float: none;
     padding: 0;
@@ -93,6 +94,7 @@ html,body {
   .app-navbar ul li a {
     background-color: white;
     color: black;
+    white-space: nowrap;
   }
 }
 
