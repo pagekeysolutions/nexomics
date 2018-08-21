@@ -60,8 +60,11 @@ html,body {
   color: inherit;
   font-weight: bold;
 }
-.app-navbar ul li a:hover {
+.app-navbar ul li a:hover, .app-navbar ul li a.active:hover {
   background-color: rgba(0,0,0,0.2);
+}
+.app-navbar ul li a.active {
+  background-color: rgba(0,0,0,0.1);
 }
 
 @media only screen and (max-width: 1023px) {

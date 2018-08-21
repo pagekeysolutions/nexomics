@@ -1,69 +1,49 @@
-▼<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
     <title>Nexomics Biosciences</title>
   </head>
   <body>
     <div class="app">
       <header class="app-header">
-        <a href="../">
-          <img class="app-logo" src="../img/logo.png" alt="logo" />
+        <a href="/">
+          <img class="app-logo" src="/img/logo.png" alt="logo" />
         </a>
         <div id="hamburger" class="hamburger" onclick="hamburgerClick();"></div>
         <nav id='app-navbar' class="app-navbar">
           <ul>
-            <li><a href="../">Home</a></li>
-            <li><a href="../protein">Protein</a></li>
-            <li><a href="../nmr">NMR</a></li>
-            <li><a href="../crystallography">Crystallography</a></li>
-            <li><a href="#">More ▼</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/protein">Protein</a></li>
+            <li><a href="/nmr">NMR</a></li>
+            <li><a class="active" href="/xray">X-Ray</a></li>
+            <li><a href="/about">About Us</a></li>
           </ul>
         </nav>
       </header>
       <div class="main">
+        <!-- MAIN SITE CONTENT -->
         <h1 class="main-title">The Future of Crystallography</h1>
         <h2 style="text-align:center;">Check out the nav</h2>
+        <!-- MAIN SITE CONTENT -->
       </div>
-
-      <section class="icons-wrap" id="services">
-        <a href="../protein">
-          <div class="icon">
-            <img src="img/dna.svg" alt="Computer - Full Site Design from PageKey Solutions" />
-            <h2>Recombinant Protein Production</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi optio quos, eaque, eum illo ad.</p>
-          </div>
-        </a>
-        <a href="../nmr">
-          <div class="icon">
-            <img src="img/flask.svg" alt="Smartphone - Mobile Optimization from PageKey Solutions" />
-            <h2>NMR Services</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae rerum magni natus corrupti incidunt, veniam!</p>
-          </div>
-        </a>
-        <a href="../crystallography">
-          <div class="icon">
-            <img src="img/microscope.svg" alt="Premium Site Features from PageKey Solutions" />
-            <h2>X-Ray Crystallography</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum saepe debitis omnis error architecto ut.</p>
-          </div>
-        </a>
-      </section>
-
       <footer>
         <div class="footer-inner">
           <div>Copyright &copy; Nexomics Biosciences<span id="year"></span></div>
-          <div class="smalltext">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
           <div class="dev smalltext">
             Site developed by <a href="http://www.pagekeysolutions.com">PageKey Solutions</a>
           </div>
         </div>
       </footer>
     </div><!-- /app -->
-    <script src="../js/main.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"> -->
+    </script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
