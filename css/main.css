@@ -194,6 +194,16 @@ section.icons-wrap {
 }
 
 
+/*** PER PAGE */
+.img-feature {
+  width: 10em;
+  margin: auto;
+  text-align: center;
+  display: block;
+  padding: 1em 0;
+}
+
+
 footer {
   background-color: black;
   width: 100%;
