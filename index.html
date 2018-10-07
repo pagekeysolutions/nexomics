@@ -1,73 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <title>Nexomics Biosciences</title>
-  </head>
-  <body>
-    <div class="app">
-      <header class="app-header">
-        <a href="/">
-          <img class="app-logo" src="/img/logo.png" alt="logo" />
-        </a>
-        <div id="hamburger" class="hamburger" onclick="hamburgerClick();"></div>
-        <nav id='app-navbar' class="app-navbar">
-          <ul>
-            <li><a class="active" href="/">Home</a></li>
-            <li><a href="/protein">Protein</a></li>
-            <li><a href="/nmr">NMR</a></li>
-            <li><a href="/xray">X-Ray</a></li>
-            <li><a href="/about">About Us</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="main">
-        <!-- MAIN SITE CONTENT -->
-        <h1 class="main-title">Know the Nexomics Difference</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Site Prototypes - Corner Frame &amp; Gallery</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: lightgray;
+      margin: 0;
+    }
+    div.content {
+      width: 70%;
+      background-color: white;
+      margin: auto;
+      padding: 3em;
+    }
+    ul {
+      padding: 0;
+    }
+    ul li {
+      list-style-type: none;
+      text-align: left;
+      font-size: 250%;
+      background-color: lightblue;
+      border-radius: 1em;
+      margin: 1em;
+      padding: 1em;
+    }
+    ul li a {
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Welcome, Nexomics.</h1>
 
-        <section class="icons-wrap" id="services">
-          <a href="/protein">
-            <div class="icon">
-              <img src="/img/dna.svg" alt="Recombinant Protein Production" />
-              <h2>Recombinant Protein Production</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi optio quos, eaque, eum illo ad.</p>
-            </div>
-          </a>
-          <a href="/nmr">
-            <div class="icon">
-              <img src="/img/flask.svg" alt="NMR Services" />
-              <h2>NMR Services</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae rerum magni natus corrupti incidunt, veniam!</p>
-            </div>
-          </a>
-          <a href="/xray">
-            <div class="icon">
-              <img src="/img/microscope.svg" alt="X-Ray Crystallography" />
-              <h2>X-Ray Crystallography</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum saepe debitis omnis error architecto ut.</p>
-            </div>
-          </a>
-        </section>
-        <!-- MAIN SITE CONTENT -->
-      </div>
-      <footer>
-        <div class="footer-inner">
-          <div>Copyright &copy; Nexomics Biosciences<span id="year"></span></div>
-          <div class="dev smalltext">
-            Site developed by <a href="http://www.pagekeysolutions.com">PageKey Solutions</a>
-          </div>
-        </div>
-      </footer>
-    </div><!-- /app -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-          crossorigin="anonymous"> -->
-    </script>
-    <script src="/js/main.js"></script>
-  </body>
+    <p>Here are some links to draft websites for Nexomics Biosciences. All of the sites below should be fully functional prototypes - in other words, they look and act like a real site would!</p>
+
+    <ul>
+      <li><a href="site1">Site 1 - Custom Nexomics</a></li>
+      <li><a href="site2">Site 2 - Generic Beige</a></li>
+      <li><a href="site3">Site 3 - Law Firm</a></li>
+    </ul>
+  </div>
+</body>
 </html>
