@@ -11,6 +11,7 @@
     <title>Nexomics Biosciences</title>
   </head>
   <body>
+    <!-- navbar -->
     <nav class="navbar navbar-light navbar-expand-md">
       <a class="navbar-brand" href="index.html"><img class="app-logo" src="img/logo.png" alt="logo" /></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,10 +20,10 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="protein">Protein</a>
+            <a class="nav-link" href="protein">Protein <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="nmr">NMR</a>
@@ -35,24 +36,9 @@
           </li>
         </ul>
       </div>
-    </nav>
+    </nav> <!-- /navbar -->
 
     <div class="app">
-      <!-- <header class="app-header">
-        <a href="index.html">
-        </a>
-        <div id="hamburger" class="hamburger" onclick="hamburgerClick();"></div>
-        <nav id='app-navbar' class="app-navbar">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a class="active" href="protein">Protein</a></li>
-            <li><a href="nmr">NMR</a></li>
-            <li><a href="xray">X-Ray</a></li>
-            <li><a href="about">About</a></li>
-          </ul>
-        </nav>
-      </header> -->
-
       <div class="main container">
         <div class="row">
           <div class="col12 feature">
@@ -74,20 +60,41 @@
               <img src="img/protein-diagram.png" alt="">
             </div>
 
-            <!-- Contact Form -->
-            <h2>Inquiries</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error odit molestias sed ex, quas totam.</p>
+            <!-- Inquiries form -->
+            <h2 id="inquiry">Inquiries</h2>
+            <p>We would love to hear from you! Please reach out with the form below for any requests.</p>
             <form action="#">
               <div class="form-group contact-form">
-                <label for="">Name</label>
-                <input type="text" class="form-control" />
-                <label for="">Email</label>
-                <input type="text" class="form-control" />
+                <div class="row">
+                  <div class="col">
+                    <label for="">First Name</label>
+                    <input type="text" class="form-control" placeholder="First Name" />
+                  </div>
+                  <div class="col">
+                    <label for="">Last Name</label>
+                    <input type="text" class="form-control" placeholder="Last Name" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label for="">Email</label>
+                    <input type="text" class="form-control" placeholder="Email" />
+                  </div>
+                  <div class="col">
+                    <label for="">Phone</label>
+                    <input type="text" class="form-control" placeholder="Phone" />
+                  </div>
+                </div>
+                <label for="">Institution or Company</label>
+                <input type="text" class="form-control" placeholder="Institution or Company" />
                 <label for="">Comments</label>
-                <input type="text" class="form-control" />
-                <input type="submit" class="btn btn-primary" style="margin-top: 0.5em;">
+                <textarea class="form-control" placeholder="Comments"></textarea>
+                <div class="text-center">
+                  <input type="submit" class="btn btn-primary center-block" value="Submit Inquiry" />
+                </div>
               </div>
             </form>
+            <!-- /inquiries -->
           </div>
           <div class="col-md-4">
             <div class="sidebar">
@@ -98,7 +105,7 @@
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem sed ut beatae sint hic omnis sequi ex, cumque sit minima.
               </p>
-              <a class="btn btn-success btn-sidebar">Request Quote</a>
+              <a href="#inquiry" class="btn btn-success btn-sidebar">Request Quote</a>
             </div>
           </div>
         </div>
