@@ -5,55 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Nexomics Biosciences</title>
   </head>
   <body>
-    <div class="app">
-      <header class="app-header">
-        <a href="index.html">
-          <img class="app-logo" src="img/logo.png" alt="logo" />
-        </a>
-        <div id="hamburger" class="hamburger" onclick="hamburgerClick();"></div>
-        <nav id='app-navbar' class="app-navbar">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="protein">Protein</a></li>
-            <li><a href="nmr">NMR</a></li>
-            <li><a class="active" href="xray">X-Ray</a></li>
-            <li><a href="about">About</a></li>
+      <!-- navbar -->
+      <nav class="navbar navbar-light navbar-expand-md">
+        <a class="navbar-brand" href="index.html"><img class="app-logo" src="img/logo.png" alt="logo" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="protein">Protein</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nmr">NMR</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="xray">X-Ray <span class="sr-only">(current)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about">About</a>
+            </li>
           </ul>
-        </nav>
-      </header>
-      <div class="main">
-        <!-- MAIN SITE CONTENT -->
-        <img class="img-feature" src="img/microscope.svg" alt="Recombinant Protein Production" />
-        <h1 class="main-title">The Future of X-Ray Crystallography</h1>
+        </div>
+      </nav> <!-- /navbar -->
 
-        <h2>Crystallography</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi officiis aspernatur quasi necessitatibus, provident natus ut illo! Dolore adipisci laudantium, earum, dignissimos unde laboriosam ad quod dolor, inventore eum architecto.</p>
-
-        <h2>NDA</h2>
-        <p>Protecting customer data is the top priority for Nexomics Biosciences. Any submissions on our website are subject to our Non-Disclosure Agreement.</p>
-
-        <!-- Contact Form -->
-        <h2>Inquiries</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error odit molestias sed ex, quas totam.</p>
-        <form action="#">
-          <div class="form-group contact-form">
-            <label for="">Name</label>
-            <input type="text" class="form-control" />
-            <label for="">Email</label>
-            <input type="text" class="form-control" />
-            <label for="">Comments</label>
-            <input type="text" class="form-control" />
-            <input type="submit" class="btn" style="margin-top: 0.5em;">
+      <div class="app">
+        <div class="main container">
+          <div class="row">
+            <div class="col12 feature">
+              <img class="img-feature" src="img/dna.svg" alt="Recombinant Protein Production" />
+              <h1 class="title">Excellent X-Ray Crystallography</h1>
+            </div>
           </div>
-        </form>
 
-        <!-- MAIN SITE CONTENT -->
-      </div>
+          <div class="row">
+            <div class="content col-md-8">
+              <h2>Crystallography</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi officiis aspernatur quasi necessitatibus, provident natus ut illo! Dolore adipisci laudantium, earum, dignissimos unde laboriosam ad quod dolor, inventore eum architecto.</p>
+
+              <h2>NDA</h2>
+              <p>Protecting customer data is the top priority for Nexomics Biosciences. Any submissions on our website are subject to our Non-Disclosure Agreement.</p>
+
+              <!-- Inquiries form -->
+              <h2 id="inquiry">Inquiries</h2>
+              <p>We would love to hear from you! Please reach out with the form below for any requests.</p>
+              <form action="#">
+                <div class="form-group contact-form">
+                  <div class="row">
+                    <div class="col">
+                      <label for="">First Name</label>
+                      <input type="text" class="form-control" placeholder="First Name" />
+                    </div>
+                    <div class="col">
+                      <label for="">Last Name</label>
+                      <input type="text" class="form-control" placeholder="Last Name" />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <label for="">Email</label>
+                      <input type="text" class="form-control" placeholder="Email" />
+                    </div>
+                    <div class="col">
+                      <label for="">Phone</label>
+                      <input type="text" class="form-control" placeholder="Phone" />
+                    </div>
+                  </div>
+                  <label for="">Institution or Company</label>
+                  <input type="text" class="form-control" placeholder="Institution or Company" />
+                  <label for="">Comments</label>
+                  <textarea class="form-control" placeholder="Comments"></textarea>
+                  <div class="text-center">
+                    <input type="submit" class="btn btn-primary center-block" value="Submit Inquiry" />
+                  </div>
+                </div>
+              </form>
+              <!-- /inquiries -->
+          </div>
+          <div class="col-md-4">
+            <div class="sidebar">
+              <h2>Request a quote</h2>
+              <p>
+                We can help you get the protein you need.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem sed ut beatae sint hic omnis sequi ex, cumque sit minima.
+              </p>
+              <a href="#inquiry" class="btn btn-success btn-sidebar">Request Quote</a>
+            </div>
+            <div class="sidebar sidebar-success">
+              <h2>NDA</h2>
+              <p>Protecting customer data is the top priority for Nexomics Biosciences. Any submissions on our website are subject to our Non-Disclosure Agreement.</p>
+            </div>
+          </div>
+        </div><!-- /row -->
+      </div> <!-- /app -->
       <footer>
         <div class="footer-inner">
           <div>Copyright &copy; Nexomics Biosciences<span id="year"></span></div>

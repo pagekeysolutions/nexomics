@@ -79,6 +79,13 @@ nav {
 .feature {
   margin: 3em auto;
 }
+.feature img {
+  width: 10em;
+  margin: auto;
+  text-align: center;
+  display: block;
+  padding: 1em 0;
+}
 .feature .title {
   position: relative;
   font-weight: bold;
@@ -96,6 +103,9 @@ nav {
   background-color: #D0D4EA;
   padding: 1em;
   margin-bottom: 2em;
+}
+.sidebar-success {
+  background-color: #DDFCAD;
 }
 .sidebar h2 {
   text-align: center;
@@ -154,14 +164,24 @@ section.icons-wrap {
       height: auto; }
 
 /*** PER PAGE */
-.img-feature {
-  width: 10em;
-  margin: auto;
-  text-align: center;
-  display: block;
-  padding: 1em 0;
+.about.title {
+  margin: 1em 0;
 }
-
+.about-profile {
+  margin-bottom: 2em;
+}
+.about-profile .left {
+  font-family: 'Bai Jamjuree', sans-serif;:
+}
+.about-profile .left h3 {
+  margin: 0.5em 0;
+}
+.about-profile .left h4 {
+  color: #837F84;
+}
+.about-profile .right p {
+  margin-top: inherit;
+}
 
 footer {
   background-color: black;
