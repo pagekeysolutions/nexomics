@@ -173,10 +173,6 @@ hr {
   }
 }
 
-
-.learn-more {
-  margin: auto;
-}
 /** Good things section **/
 section.icons-wrap {
   text-align: center;
@@ -239,4 +235,17 @@ footer .smalltext {
 
 .carousel-item {
   height: 50vh;
+}
+.carousel-caption {
+  text-shadow: 1px 1px black;
+}
+
+.news-story {
+  margin-bottom: 2em;
+}
+.news-story h3 {
+  font-family: 'Bai Jamjuree', sans-serif;
+  background-color: beige;
+  padding: 1em;
+  border-radius: .2em;
 }
