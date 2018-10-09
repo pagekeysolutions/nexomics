@@ -1,0 +1,259 @@
+/**
+Primary green: #6CAA3F;
+Primary blue: #153099;
+
+Slate Gray: #738290;
+Vivid blue: #00A7E1;
+
+White: #fff;
+*/
+
+html,body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+.app {
+  overflow-x: hidden;
+}
+.app-header {
+  background-color: white;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: left;
+  height: 8em;
+  box-shadow: 0 0 1em 0.1em black;
+}
+nav {
+  box-shadow: 0 0 1em 0.1em black;
+}
+.app-logo {
+  float: left;
+  height: 6.5em;
+  padding: 1.5em;
+  display: inline-block;
+}
+.app-navbar-shown ul {
+  display: inherit !important;
+  width: 15em !important;
+  border-left: 1px solid rgba(0,0,0,0.5) !important;
+}
+.app-navbar ul {
+  margin: 3.6em .9em;
+  padding-left: 0;
+  list-style-type: none;
+  float: right;
+}
+.app-navbar ul li {
+  display: inline;
+  margin-right: 1em;
+}
+.app-navbar ul li a {
+  padding: 0.75rem;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 0.3em;
+  color: black;
+
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+.app-navbar ul li a:hover, .app-navbar ul li a.active:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+.app-navbar ul li a.active {
+  background-color: rgba(0,0,0,0.1);
+}
+
+.main {
+  /* padding: 3em;
+  width: 80%; */
+  /* margin: auto;
+  margin-top: 7em; */
+}
+.main p {
+  margin: 2em 0;
+}
+.feature {
+  margin: 3em auto;
+}
+.feature img {
+  width: 10em;
+  margin: auto;
+  text-align: center;
+  display: block;
+  padding: 1em 0;
+}
+.feature .title {
+  position: relative;
+  font-weight: bold;
+  text-align: center;
+}
+.feature .subtitle {
+  text-align: center;
+}
+.main-subtitle a {
+  text-decoration: underline;
+  color: inherit;
+}
+.sidebar {
+  font-family: 'Bai Jamjuree', sans-serif;
+  background-color: #D0D4EA;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+.sidebar-success {
+  background-color: #DDFCAD;
+}
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.sidebar .btn-sidebar {
+  margin-top: 1.5em;
+  font-size: 120%;
+  display: block;
+  text-shadow: 1px 1px black;
+  font-weight: bold;
+  color: white !important;
+}
+
+.diagram {
+  border: 1px solid gray;
+  margin: 2em 0;
+}
+.diagram h2 {
+  text-align: center;
+  font-size: 100%;
+  background-color: gray;
+  color: white;
+  padding: 0.5em 0;
+}
+.diagram img {
+  width: 100%;
+}
+
+.process-steps h3 {
+  font-weight: bold;
+  font-family: 'Bai Jamjuree', sans-serif;
+  border-bottom: 1px solid lightgray;
+  padding: 0.5em 0;
+  margin: 0.5em 0;
+}
+.process-steps p {
+  margin: 1em 0;
+}
+
+form input[type=submit], form label {
+  margin-top: 1em;
+}
+
+
+hr {
+  border-top: 2px solid lightgray;
+}
+
+.gmap-contact-wrap {
+  text-align: left;
+}
+.gmap-contact {
+  width: 65%;
+  height: 300px;
+  margin-bottom: 2em;
+  background-color: lightgray;
+}
+@media only screen and (max-width: 991px) { /* less than md size */
+  .gmap-contact-wrap {
+    text-align: center;
+  }
+  .gmap-contact {
+    width: 100%;
+  }
+}
+
+/** Good things section **/
+section.icons-wrap {
+  min-height: 5em;
+  padding: 1.5em 0.5em;
+ }
+  section.icons-wrap a {
+    color: inherit;
+    text-decoration: none;
+  }
+  section.icons-wrap .icon {
+    color: black;
+    margin: auto;
+    padding: 1.5em 0.5em;
+    text-align: left;
+    transition: all 1s ease;
+    margin-bottom: 1em;
+  }
+    section.icons-wrap .icon:hover {
+      background-color: rgba(0,0,0,0.2);
+    }
+    section.icons-wrap .icon img {
+      display: inline-block;
+      width: 5em;
+      height: auto; }
+    section.icons-wrap .icon h2 {
+      margin-left: 1em;
+      display: inline-block;
+      font-size: 140%;
+    }
+
+/*** PER PAGE */
+.about.title, .contact.title {
+  margin: 1em 0;
+}
+.about-profile {
+  margin-bottom: 2em;
+}
+.about-profile .left {
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+.about-profile .left h3 {
+  margin: 0.5em 0;
+}
+.about-profile .left h4 {
+  color: #837F84;
+}
+.about-profile .right p {
+  margin-top: inherit;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  color: white;
+  padding: 0.5em;
+  text-align: center;
+}
+footer .footer-inner {
+  width: 80%;
+  margin: auto;
+}
+footer a {
+  color: white;
+}
+footer .smalltext {
+  font-size: 0.7rem;
+}
+
+.carousel-item {
+  max-height: 50vh;
+}
+.carousel-caption {
+  text-shadow: 1px 1px black;
+}
+
+.news-story {
+  margin-bottom: 2em;
+}
+.news-story h3 {
+  font-family: 'Bai Jamjuree', sans-serif;
+  background-color: beige;
+  padding: 1em;
+  border-radius: .2em;
+}
