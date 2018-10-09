@@ -155,6 +155,25 @@ hr {
   border-top: 2px solid lightgray;
 }
 
+.gmap-contact-wrap {
+  text-align: left;
+}
+.gmap-contact {
+  width: 65%;
+  height: 300px;
+  margin-bottom: 2em;
+  background-color: lightgray;
+}
+@media only screen and (max-width: 991px) { /* less than md size */
+  .gmap-contact-wrap {
+    text-align: center;
+  }
+  .gmap-contact {
+    width: 100%;
+  }
+}
+
+
 /** Good things section **/
 section.icons-wrap {
   text-align: center;
@@ -179,7 +198,7 @@ section.icons-wrap {
       height: auto; }
 
 /*** PER PAGE */
-.about.title {
+.about.title, .contact.title {
   margin: 1em 0;
 }
 .about-profile {
